@@ -1,7 +1,13 @@
 #include "header.h"
-#include "header.h"
 
-void translate()
+/*
+FUNCTION: define()
+PARAMETERS: none
+RETURN: none, a void function
+DESCRIPTION: using DFA as a basis, this function uses multiple if/else statements to parse through the user input character by character to recognize the string and then print its definition to the user
+*/
+
+void define()
 {
 	char userInput[100];
 	bool isValid = false;
@@ -61,41 +67,41 @@ void translate()
 			if (userInput[1]=='a')
 			{
 				if (userInput[2]=='r')
-					cout << "Parmigiana is 'parmesan' in Italian." << endl;
+					cout << " Any dish in which a main ingredient is combined with cheese and coated with tomato sauce before being baked." << endl;
 				else if (userInput[2]=='t')
-					cout << "Patatine is 'potatoes' in Italian." << endl;
+					cout << "Patatine is usually a side of french fries but in some parts of Italy it can mean potato chips." << endl;
 			}
 			else if (userInput[1]=='e')
 				cout << "Pesca is 'fish' in Italian." << endl;
 			else if (userInput[1]=='r')
 			{
 				if (userInput[2]=='o')
-					cout << "Prosciutto is 'ham' in Italian." << endl;
+					cout << "In Italian, prosciutto means any kind of ham. There is prosciutto crudo, a raw, cured ham, and prosciutto cotto, or cooked ham." << endl;
 				else if (userInput[2]=='i')
-					cout << "Primi is 'first' in Italian." << endl;
+					cout << " Primi, or “first dishes,” usually include pasta, risotto (creamy rice) or soup." << endl;
 			}
 		}
 		else if (userInput[0]=='s' || userInput[0]=='S')
 		{
 			if (userInput[1]=='a')
-				cout << "Salsicce is 'sausages' in Italian." << endl;
+				cout << "Salsiccia is certainly the most ancient and best known of sausages. It is made from fresh meat, mostly pork, with scraps of pancetta and bits of pork neck. It is usually eaten fresh, but is also often grilled.." << endl;
 			else if (userInput[1]=='e')
-				cout << "Secondi is 'seconds' in Italian." << endl;
+				cout << "This is a meat, fish or vegetable main dish, and usually most expensive area of the menu." << endl;
 			else if (userInput[1]=='t')
-				cout << "Stracciatella is 'chocolate chip in Italian." << endl;
+				cout << "Stracciatella is a type of Italian or Italian-style ice cream containing fine flakes of chocolate." << endl;
 		}
 		else if (userInput[0]=='t' || userInput[0]=='T')
-			cout << "Tacchino is 'turkey' in Italian." << endl;
+			cout << "Tacchino is a turkey recipe that’s served just once a year, on a holiday in November — not that holiday, naturally, but on the 11th of the month, the feast day of the town’s patron saint, San Martino, or St. Martin of Tours as he is remembered elsewhere." << endl;
 		else if (userInput[0]=='v' || userInput[0]=='V')
 		{
 			if (userInput[1]=='a')
-				cout << "Vaniglia is 'vanilla' in Italian." << endl;
+				cout << "Vaniglia is a flavor of gelato commonly made with vanilla bean or baccello di vaniglia.." << endl;
 			else if (userInput[1]=='e')
-				cout << "Verdura is 'vegetables in Italian." << endl;
+				cout << "Verdura refers to all of the vegatation used for cooking, not one specific vegetable." << endl;
 		}
 		else if (userInput[0]=='0')
 			cout << "Returning to home page..." << endl;
-		else 
+		if (userInput[100] != 'c','o','p','p','a')
 			cout << "Sorry, this word is not available for translation. Please make sure the word is spelled correctly and not capitalized." << endl;
 	}
 
