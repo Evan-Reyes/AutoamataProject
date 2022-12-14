@@ -2,4 +2,6 @@
 using namespace std;
 
 void displayMenu();
-int promptUser();
+char promptUser();
+void translate();
+void define();
