@@ -1,5 +1,12 @@
 #include "header.h"
 
+/*
+FUNCTION: displayMenu()
+PARAMETERS: none
+RETURN: none, void function
+DESCRIPTION: prints lines containing food items in Italian in a menu manner to present user with words available for translation
+*/
+
 void displayMenu()
 {
 	cout << "+--------------------------------------------------------+"<<endl;
@@ -22,6 +29,7 @@ void displayMenu()
 	cout << "|	Gelato...................................$3.25   |"<<endl;
 	cout << "|	     Fiordilatte                                 |"<<endl;
 	cout << "|	     Stracciatella                               |"<<endl;
+	cout << "|	     Vaniglia                                    |"<<endl;
 	cout << "|	Granita..................................$2.70   |"<<endl;
 	cout << "|                         GRAZIE!                        |"<<endl;
 	cout << "+--------------------------------------------------------+"<<endl;
