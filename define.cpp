@@ -101,7 +101,7 @@ void define()
 		}
 		else if (userInput[0]=='0')
 			cout << "Returning to home page..." << endl;
-		if (userInput[100] != 'c','o','p','p','a')
+		else
 			cout << "Sorry, this word is not available for translation. Please make sure the word is spelled correctly and not capitalized." << endl;
 	}
 
