@@ -1,7 +1,23 @@
-CC = gcc
+CFLAGS = -O
+CC = g++
 
-AutomataProject: define.cpp displayMenu.cpp header.h main.cpp promptUser.cpp translate.cpp
-            $(CC) -o AutomataProject define.cpp displayMenu.cpp header.h main.cpp promptUser.cpp translate.cpp
+FinalProject: main.o define.o translate.o promptUser.o displayMenu.o
+	$(CC) $(CFLAGS) -o FinalProject main.o define.o translate.o promptUser.o displayMenu.o
+
+main.o: main.cpp
+	$(CC) $(CFLAGS) -c main.cpp
+
+define.o: define.cpp
+	$(CC) $(CFLAGS) -c define.cpp
+
+translate.o: translate.cpp
+	$(CC) $(CFLAGS) -c translate.cpp
+
+promptUser.o: promptUser.cpp
+	$(CC) $(CFLAGS) -c promptUser.cpp
+
+displayMenu.o: displayMenu.cpp
+	$(CC) $(CFLAGS) -c displayMenu.cpp
 
 clean:
-       rm -f core *.o
+	rm -f core *.o
