@@ -3,7 +3,7 @@
 char promptUser()
 {
 	char choice;
-	cout << "*********************************************8*********"<<endl;
+	cout << "*******************************************************"<<endl;
 	cout << "*  Hello! Welcome to Il Miglior Ristorante Italiano!  *"<<endl;
 	cout << "*  1. Display Food Menu                               *"<<endl;
 	cout << "*  2. Enter a Translation                             *"<<endl;
