@@ -1,8 +1,8 @@
 #include "header.h"
 
-int promptUser()
+char promptUser()
 {
-	int choice;
+	char choice;
 	cout << "*********************************************8*********"<<endl;
 	cout << "*  Hello! Welcome to Il Miglior Ristorante Italiano!  *"<<endl;
 	cout << "*  1. Display Food Menu                               *"<<endl;
