@@ -1,8 +1,15 @@
 #include "header.h"
 
-int promptUser()
+/*
+FUNCTION: promptUser()
+PARAMETERS: none
+RETURN: char value 'choice'
+DESCRIPTION: prints a menu of choices the user can choose from and then reads user input into char 'choice' which will be passed back to main
+*/
+
+char promptUser()
 {
-	int choice;
+	char choice;
 	cout << "**************************************************"<<endl;
 	cout << "*  Hello! Welcome to **NAME RESTAUARANT HERE** ! *"<<endl;
 	cout << "*  1. Display Food Menu                          *"<<endl;
