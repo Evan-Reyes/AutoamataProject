@@ -2,23 +2,23 @@
 
 int main()
 {
-	int choice = promptUser();
+	char choice = promptUser(); //call prompt user function to get what user wants to do
 
-	while (choice != 4)
+	while (choice != '4')	//as long as user doesn't want to quit, continue prompting the choice menu
 	{
-		if(choice == 1)
+		if(choice == '1')
 		{
-			displayMenu();
+			displayMenu(); //will print the menu with food items in Italian
 			choice = promptUser();
 		}
-		else if(choice == 2)
+		else if(choice == '2')
 		{
-			cout << "Translate" << endl;
+			translate(); //will ask user for a word they want translated and print translation
 			choice = promptUser();
 		}
-		else if (choice == 3)
+		else if (choice == '3')
 		{
-			cout << "Definition" << endl;
+			define(); //will ask user for a word they want defined and print definition
 			choice = promptUser();
 		}
 		else
@@ -29,6 +29,8 @@ int main()
 	}
 
 	cout << "Thank you, come again!" << endl;
+
+	//exit program
 
 	return 0;
 }
